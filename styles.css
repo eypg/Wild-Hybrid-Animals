@@ -1,0 +1,70 @@
+/* Temel CSS sıfırlama */
+body, h1, h2, h3, p, figure, figcaption {
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Web sitesi genel stil ayarları */
+  body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    padding: 20px;
+  }
+  
+  /* Konteyner ve semantik bölümler */
+  .container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+  }
+  
+  header, nav, main, section, article, aside, footer {
+    display: block;
+  }
+  
+  /* Başlık stil ayarları */
+  header {
+    background: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  /* Navigasyon menüsü stil ayarları */
+  nav {
+    display: flex;
+    justify-content: space-around;
+    background: #555;
+    padding: 10px;
+  }
+  
+  nav a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  /* Ana içerik ve yan içerik stil ayarları */
+  main {
+    float: left;
+    width: 70%;
+  }
+  
+  aside {
+    float: right;
+    width: 30%;
+  }
+  
+  /* Medya sorguları */
+  @media (max-width: 700px) {
+    nav, main, aside {
+      float: none;
+      width: 100%;
+    }
+  }
+  
+  @media (max-width: 500px) {
+    header, nav {
+      text-align: center;
+    }
+  }
+  
